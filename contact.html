@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Spartan", sans-serif;
+        }
+
+        #header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.36);
+  }
+  
+  #navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #navbar li {
+    list-style: none;
+    padding: 0 20px;
+  }
+  
+  #navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+  }
+  
+  #navbar li a:hover,
+  #navbar li a.active{
+    color: #088178;
+  }
+  
+  #navbar li a.active::after,
+  #navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+  }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('bebeg.JPG');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 100px auto 20px; 
+            padding: 20px;
+            background-color:  rgba(253, 252, 249, 0.712);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+        }
+
+        .contact-form {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #000000;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 20px;
+            color: #000000;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 18px;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #63a156;
+            color: #fff;
+            border: none;
+            padding: 15px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .contact-info {
+            flex: 1;
+            border-left: 1px solid #ccc;
+            padding-left: 20px;
+        }
+
+        .contact-info h2 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            color: #000000;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .icon {
+            margin-right: 5px;
+            color: #000000;
+        }
+
+        footer {
+            background-color: rgba(255, 255, 255, 0.705);
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="header">
+        <a href="#"><img src="logo.png" class="logo" alt=""></a>
+    
+        <div>
+          <ul id="navbar">
+              <li><a href="homepage.html">Home</a></li>
+              <li><a href="gift.html">Gift</a></li>
+              <li><a href="decorations.html">Decorations</a></li>
+              <li><a href="paper.html">Papers</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a  class="active" href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </section>
+
+
+    <div class="container">
+        <div class="contact-form">
+            <h1>Contact Us</h1>
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Send Message">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <div>
+                <p><i class="fas fa-user icon"></i><strong>Name:</strong> Christian John Paul Olano</p>
+                <p><i class="fas fa-envelope icon"></i><strong>Email:</strong> olanochristian1@gmail.com</p>
+                <p><i class="fas fa-phone icon"></i><strong>Phone:</strong> 0927-742-9983</p>
+                <p><i class="fas fa-map-marker-alt icon"></i><strong>Address:</strong> SM Southmall, LG/F Door 2, Real Street, Almanza, Las Piñas, 1750 Metro Manila</p>
+            </div>
+            <div>
+                <p><i class="fas fa-user icon"></i><strong>Name:</strong> Tracey Nicole Montes</p>
+                <p><i class="fas fa-envelope icon"></i><strong>Email:</strong> trcymontes.n@gmail.com</p>
+                <p><i class="fas fa-phone icon"></i><strong>Phone:</strong> 0919-602-1813</p>
+                <p><i class="fas fa-map-marker-alt icon"></i><strong>Address:</strong> SM Southmall, LG/F Door 2, Real Street, Almanza, Las Piñas, 1750 Metro Manila</p>
+            </div>
+            <div>
+                <p><i class="fas fa-user icon"></i><strong>Name:</strong> Mary Jhane Olano</p>
+                <p><i class="fas fa-envelope icon"></i><strong>Email:</strong> maryjhaneolano1@gmail.com</p>
+                <p><i class="fas fa-phone icon"></i><strong>Phone:</strong>  0968-746-5190</p>
+                <p><i class="fas fa-map-marker-alt icon"></i><strong>Address:</strong> SM Southmall, LG/F Door 2, Real Street, Almanza, Las Piñas, 1750 Metro Manila</p>
+            </div>
+        </div>
+    </div>
+<footer>
+    <p>@ 2024, ICT A and B - Computer Programming Final Project</p>
+    <p>We extend our gratitude to our teacher, Mr. Ryan Paul Roy, for his invaluable guidance and support throughout this project.</p>
+</footer>
+</body>
+</html>
